@@ -191,7 +191,7 @@ if(result == 0) {
  	yr.innerHTML = M2;
  	zr.innerHTML = M3;
  	
- 	xyzresult.innerHTML = "The result of X is = " + M1 +"<br><br><br>The result of Y is = " + M2 + "<br><br><br>The result of Z is = " + M3;
+ 	xyzresult.innerHTML = "<br>The result of X is = " + M1 +"<br><br><br>The result of Y is = " + M2 + "<br><br><br>The result of Z is = " + M3;
  	
  	//else end heare (result)
 		}
