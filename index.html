@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<link rel="stylesheet" href="style.css">
+				<title>Page title</title>
+</head>
+<body>
+				<h1 style="text-align:center; font-size:10px;"> you must use (-) operator before input (-) number. <br> example ( 10, -5, 8) <br><br>Now try yourself </h1>
+				
+			<br><br>
+			<div style="margin:auto;width:70%;">
+							
+							
+				<input id="A11" type="number" placeholder="A11">
+ 				<input id="A12" type="number"placeholder="A12">
+				<input id="A13" type="number"placeholder="A13">
+							<button style="outline:none;border:none;background-color:white;font-size:100px;font-weight:bold;color:#bfbfbf;">=</button>
+				<input id="X" placeholder="X" type="number">
+							
+							
+							<br>
+				<input id="A21" type="number" placeholder="A21">
+				<input id="A22" type="number" placeholder="A22">
+				<input id="A23" type="number" placeholder="A23">
+							<button style="outline:none;border:none;background-color:white;font-size:100px;font-weight:bold;color:#bfbfbf;">=</button>
+							<input id="Y" placeholder="Y" type="number">
+							<br>
+					<input id="A31" type="number" placeholder="A31">
+					<input id="A32" type="number" placeholder="A32">
+					<input id="A33" type="number" placeholder="A33">
+							<button style="outline:none;border:none;background-color:white;font-size:100px;font-weight:bold;color:#bfbfbf;">=</button>
+							<input id="Z" placeholder="Z" type="number">
+							
+					<br><br><br>		
+						<button id="nextbtn">click and print out result </button>	
+			
+							
+					
+			</div>
+		
+			<br>	
+			<br>
+			<br>
+			<br>
+			<h1 id="output1" style="margin:auto; width:70%;""></h1>			
+			<h1 id="output2" style="margin:auto; width:70%;"></h1><br>
+			<h1 id="output3" style="margin:auto; width:70%;"></h1><br>
+			<h1 id="output4" style="margin:auto; width:70%;"></h1><br>
+			<h1 id="output5" style="margin:auto; width:70%;"></h1><br>
+				<h1 id="output6" style="margin:auto; width:70%;"></h1><br>
+			
+				<h1 id="cofactorA" style="display:none;margin:auto;width:70%;">The matrix of Co-factor A = </h1>
+				<br>
+				
+				
+				<div id="AmatrixShow" style="border-style:solid; border-width:5px; border-bottom:none; border-top:none; border-radius:15px;margin:auto;width:40%;display:none;">
+						
+							<h2 id="a11"> &nbsp; </h2>
+							<h2 id="a12"> &nbsp; </h2>
+							<h2 id="a13"></h2>
+							<br>
+							<h2 id="a21"> &nbsp; </h2>
+							<h2 id="a22"> &nbsp; </h2>
+							<h2 id="a23"></h2>
+							<br>
+							<h2 id="a31"> &nbsp; </h2>
+							<h2 id="a32"> &nbsp; </h2>
+							<h2 id="a33"></h2>
+							
+				</div>
+				<br>
+				<br>
+				<hr id="hr1" style="display:none;margin:auto;width:70%;">
+				<br>
+				<br>
+				<h1 id="AdjA" style="display:none;margin:auto;width:70%;"> Adj A B<sup>T</sup> =</h1>
+					<div id="AmatrixShow2" style="border-style:solid; border-width:5px; border-bottom:none; border-top:none; border-radius:15px;margin:auto;width:40%;display:none;">
+						
+							<h2 id="a1"> &nbsp; </h2>
+							<h2 id="a2"> &nbsp; </h2>
+							<h2 id="a3"></h2>
+							<br>
+							<h2 id="a4"> &nbsp; </h2>
+							<h2 id="a5"> &nbsp; </h2>
+							<h2 id="a6"></h2>
+							<br>
+							<h2 id="a7"> &nbsp; </h2>
+							<h2 id="a8"> &nbsp; </h2>
+							<h2 id="a9"></h2>
+							
+				</div>
+		<br>
+		<br>
+		<hr id="hr2" style=" display:none;margin:auto;width:70%;">
+		<br>
+		<h1 id="AAA" style="display:none;margin:auto;width:70%;"> A <sup>-1</sup> = (1 / |A|)×Adj A </h1>
+		
+		<br><br><br><br>
+				
+			<h1 id="A1" style="display:none;margin:auto;width:70%; margin-bottom:-15%;"><h1>
+			<br>
+			<div id="AA" style="border-style:solid; border-width:5px; border-bottom:none; border-top:none; border-radius:15px;margin:auto;width:40%;display:none;">
+						
+							<h2 id="ab1"> &nbsp; </h2>
+							<h2 id="ab2"> &nbsp; </h2>
+							<h2 id="ab3"></h2>		
+							<br>
+							<h2 id="ab4"> &nbsp; </h2>
+							<h2 id="ab5"> &nbsp; </h2>
+							<h2 id="ab6"></h2>
+							<br>
+							<h2 id="ab7"> &nbsp; </h2>
+							<h2 id="ab8"> &nbsp; </h2>
+							<h2 id="ab9"></h2>
+							
+				</div>				
+					<br>
+		<hr id="hr3" style="display:none; margin:auto;width:70%;">
+					<br>	
+					
+					
+					<h1 id="abcd" style="display:none; margin:auto; width:70%;">A<sup>-1</sup> × L </h1>
+					
+					<br>	
+			
+			<h1 id="AC1" style="display:block;margin:auto;width:70%; margin-bottom:-15%;"><h1>
+							
+			<div id="martrixShow" style="border-style:solid; border-width:5px; border-bottom:none; border-top:none; border-radius:15px;margin:auto;width:30%;display:none;">
+						
+							<h2 id="b1"> &nbsp; </h2>
+							<h2 id="b2"> &nbsp; </h2>
+							<h2 id="b3"></h2>
+							<br>
+							<h2 id="b4"> &nbsp; </h2>
+							<h2 id="b5"> &nbsp; </h2>
+							<h2 id="b6"></h2>
+							<br>
+							<h2 id="b7"> &nbsp; </h2>
+							<h2 id="b8"> &nbsp; </h2>
+							<h2 id="b9"></h2>
+					
+				</div>
+					<div id="xyz" style="border-style:solid; border-width:5px; border-bottom:none; border-top:none; border-radius:15px;margin-top:-20%;margin-right:15%;width:10%;display:none;float:right;">
+							  <h3 id="x"></h3>
+								<h3 id="y"></h3>
+								<h3 id="z"></h3>
+								
+							
+										
+						</div>	
+						<br>
+						<br>
+						
+						<hr id="hr4" style="display:none; margin:auto;width:70%;">
+						<br><br>
+						
+								<h1 id="ACC1" style="display:none;margin:auto;width:70%; margin-bottom:-15%;"><h1>
+						
+									<div id="martrixShow2" style="border-style:solid; border-width:5px; border-bottom:none; border-top:none; border-radius:15px;margin:auto;width:40%;display:none;">
+						
+							<h3 id="bb1"></h3>
+							<h3 id="bb2"></h3>
+							<h3 id="bb3"></h3>
+</div>
+			
+			
+						<br>
+	
+<hr id="hr5" style="display:none; margin:auto;width:70%;">	
+<br>
+<br>
+	
+<h1 id="ACC2" style="display:none;margin:auto;width:70%; margin-bottom:-10%;"><h1>
+						
+			<div id="martrixShow3" style="border-style:solid; border-width:5px; border-bottom:none; border-top:none; border-radius:15px;margin:auto;width:40%;display:none;">
+						
+							<h3 id="bb4"></h3>
+							<h3 id="bb5"></h3>
+							<h3 id="bb6"></h3>
+</div>
+	
+						<br>	
+<hr id="hr6" style="display:none; margin:auto;width:70%;">	
+
+<br>						
+<div id="martrixShow4" style="border-style:solid; border-width:5px; border-bottom:none; border-top:none; border-radius:15px;margin:auto;width:40%;display:none;">
+						
+							<h3 id="bb7"></h3>
+							<h3 id="bb8"></h3>
+							<h3 id="bb9"></h3>
+</div>
+
+<hr id="hr7" style="display:none; margin:auto;width:70%;">	
+
+<div id="ax"  style="display:none;">
+
+	<div style="border-style:solid; border-width:5px; border-bottom:none; border-top:none; border-radius:15px; margin-left:35%; width:10%; float:left;">
+							  <h3 >X</h3>
+								<h3 >Y</h3>
+								<h3 >Z</h3>	
+	</div>
+	
+		
+						<div >
+										<h1>=</h1>
+						</div>
+				
+
+	<div id="az3" style="border-style:solid; border-width:5px; border-bottom:none; border-top:none; border-radius:15px; margin-right:35%; margin-top:-13%; width:10%; float:right;">
+							  <h3 id="xr" >1</h3>
+								<h3 id="yr" >3</h3>
+								<h3 id="zr" >5</h3>	
+	</div>
+			</div>	
+			
+				<br>
+			<br>
+			<br>
+			<br>
+			
+			<h1 id="xyzresult" style="margin:auto; width:70%;""></h1>	
+				<br>
+			<br>
+			<br>
+				<br>
+		
+			
+			<div style="margin:auto; width:80%; border-style:solid; border-width:4px;box-shadow:5px 10px 40px black; border-radius:40px;">
+					<h1 style="margin-left:30%;">( leave a comment ) </h1>	
+					<br>
+					<br>
+					<br>	
+							<h1 style="font-size:40px;"> User Name : </h1>
+							<input id="name" type="name" placeholder="Your Name" style="width:60%;float:left; margin-left:35%; margin-top:-14%;">
+							
+							
+							<h1 style="font-size:40px;"> Comment &nbsp : </h1>
+							<textarea  id="comment" type="text" placeholder="Your Comment " style="width:60%;float:left; margin-left:35%; margin-top:-14%;"></textarea>
+		<br><br>	
+				
+			<button id="commentBtn">Comment</button>
+							
+				<br>
+			<br>
+				
+			
+			</div>
+			
+			<br>
+			<br>
+			<br>
+		  <br>
+			
+			<div style="margin:auto; width:80%; border-style:solid; border-width:4px;box-shadow:5px 10px 40px black; border-radius:40px; display:block;">
+					
+					<b><h2 style="margin-left:35%;">comments :</h2><hr></b>	
+					
+					<h1 id="userComment" style="margin-left:30px;font-size:20px;"></h1>	<hr>
+					
+					<h1 style="margin-left:30px;font-size:20px;">shuvo :<br> hum valo</h1>	<hr>
+				
+				<h1 style="margin-left:30px;font-size:20px;">Istiaque siam :<br> valoi hoiche. answer gula correct chilo.</h1>	<hr>
+					
+			<h1 style="margin-left:30px;font-size:20px;">Johir Rayhan :<br> khub sohojei hoye gelo solution. bah!! 😃 </h1>
+							
+			</div>
+			
+		
+				<br>
+			<br>
+				<br>
+			<br>
+			<br>
+			
+			<h1 id="connectMe" style="text-align:center;">connect me ! click here </h1>
+			<br><br>
+			
+			<div id="contactDetails" style="width:100%; background-color:#15a1ff; border-radius: 50px 200px / 320px;; box-shadow:2px 10px 50px black; display:none;">
+						<br><br>
+						<img style="height:420px; width:400px; border-radius:1000px; margin-left:50px; box-shadow:2px 5px 40px black;" src="IMG_20210406_181708_543.jpg" alt="loading...">
+						<h1 style="float:right; margin-right:80px; font-size:50px; ">Abidur Rahman</h1>
+					
+						
+						<h1 style="float:right; margin-right:5%; font-size:30px; margin-top:-30%; ">Studied at :<hr> Barishal Polytechnic Institute <br>(computer)</h1>
+						
+				<a href="https://www.facebook.com/im.abid1234"><img class="fbInsta" src="fb.png" alt="loading... "></a>
+					<a href="https://instagram.com/a_b_i_d________?igshid=8lolz2errddy"><img style="height:140px;width:140px; margin-left:10%;margin-top:-14%; background-color:none;" class="fbInsta" src="insta.png" alt="loading... "></a>
+						
+						<br><br>
+		</div>
+			
+				<br><br><br><br>
+			<script src="index.js"></script>	
+</body>
+</html>
